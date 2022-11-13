@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import "./index.css";
 import AddDisease from "./pages/AddDisease";
@@ -10,4 +9,4 @@ const App = () => (
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById("app"));
+export default App;
