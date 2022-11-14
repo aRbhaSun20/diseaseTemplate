@@ -1,16 +1,25 @@
 import { Delete } from "@mui/icons-material";
-import { Button, IconButton, TextField } from "@mui/material";
+import {
+  Button,
+  IconButton,
+  ListItemText,
+  MenuItem,
+  TextField,
+} from "@mui/material";
 import React, { useState } from "react";
 import "react-json-pretty/themes/monikai.css";
 import JSONPretty from "react-json-pretty";
 
 const INITIAL_DATA = {
-  diseaseName: "",
-  introduction: "",
-  diagnosis: "",
-  ref: "",
-  cause: "",
+  DiseaseName: "",
+  Introduction: "",
+  Diagnosis: "",
+  References: "",
+  Causes: "",
+  Description: "",
 };
+
+const BOLD_OPTIONS = ["normal", "bold", "bolder"];
 function AddDisease() {
   const [show, setShow] = useState("");
   const [diseaseData, setDiseaseData] = useState(INITIAL_DATA);
@@ -28,7 +37,9 @@ function AddDisease() {
   };
 
   const handleAddSymptom = () => {
-    setSymptoms((state) => state.concat(""));
+    setSymptoms((state) =>
+      state.concat({ text: "", fontWeight: "normal", fontSize: 16 })
+    );
   };
 
   const handleDeleteSymptom = (index) => {
@@ -36,62 +47,95 @@ function AddDisease() {
   };
 
   const handleSymChange = (e, index) => {
-    const { value } = e.target;
-    setSymptoms((state) => state.map((ele, i) => (i === index ? value : ele)));
+    const { name, value } = e.target;
+    setSymptoms((state) =>
+      state.map((ele, i) => (i === index ? { ...ele, [name]: value } : ele))
+    );
   };
 
   const handleSubmit = () => {
-    setShow(JSON.stringify({ ...diseaseData, symptoms }));
+    setShow(JSON.stringify({ ...diseaseData, Symptoms: symptoms }));
   };
 
   return (
     <div className="container">
       <div className="inpt-container">
         <TextField
-          name="diseaseName"
+          name="DiseaseName"
           label="Disease Name"
-          value={diseaseData.e}
+          value={diseaseData.DiseaseName}
           style={{ width: "20rem" }}
           onChange={handleChange}
         />
         <TextField
-          name="introduction"
+          name="Introduction"
           label="Introduction"
-          value={diseaseData.introduction}
+          value={diseaseData.Introduction}
           style={{ width: "20rem" }}
           onChange={handleChange}
         />
         <TextField
-          name="diagnosis"
+          name="Diagnosis"
           label="Diagnosis"
-          value={diseaseData.diagnosis}
+          value={diseaseData.Diagnosis}
           style={{ width: "20rem" }}
           onChange={handleChange}
         />
         <TextField
-          name="ref"
-          value={diseaseData.ref}
+          name="References"
+          value={diseaseData.References}
           label="References"
           style={{ width: "20rem" }}
           onChange={handleChange}
         />
         <TextField
-          name="cause"
-          value={diseaseData.cause}
+          name="Causes"
+          value={diseaseData.Causes}
           label="Causes"
           style={{ width: "20rem" }}
           onChange={handleChange}
+        />
+        <TextField
+          name="Description"
+          value={diseaseData.Description}
+          label="Description"
+          style={{ width: "20rem" }}
+          onChange={handleChange}
+          multiline
+          maxRows={5}
         />
         <div className="syms-container">
           {symptoms.map((sym, i) => (
             <div key={i} className="sym-container">
               <TextField
-                name={`Symptoms ${i + 1}`}
-                value={sym}
+                name="text"
+                value={sym.text}
                 label="symptoms"
                 style={{ width: "20rem" }}
                 onChange={(e) => handleSymChange(e, i)}
               />
+              <TextField
+                name="fontSize"
+                value={sym.fontSize}
+                label="Font Size"
+                style={{ width: "20rem" }}
+                type="number"
+                onChange={(e) => handleSymChange(e, i)}
+              />
+              <TextField
+                name="fontWeight"
+                value={sym.fontWeight}
+                label="Font Weight"
+                select
+                style={{ width: "20rem" }}
+                onChange={(e) => handleSymChange(e, i)}
+              >
+                {BOLD_OPTIONS.map((ele, j) => (
+                  <MenuItem key={j}value={ele}>
+                    <ListItemText primary={ele} key={i} />
+                  </MenuItem>
+                ))}
+              </TextField>
               <IconButton onClick={() => handleDeleteSymptom(i)}>
                 <Delete style={{ color: "red" }} />
               </IconButton>
