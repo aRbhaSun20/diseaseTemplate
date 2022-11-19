@@ -17,7 +17,7 @@ body {
   /* justify-content: space-between; */
   gap: 1.5rem;
   margin: auto;
-  width: 55%;
+  /* width: 55%; */
 }
 .but-container {
   display: flex;
@@ -44,4 +44,5 @@ body {
 .__json-pretty__ {
   background: transparent !important;
   font-size: 1rem !important;
+  white-space: pre-wrap !important;
 }
