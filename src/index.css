@@ -46,3 +46,9 @@ body {
   font-size: 1rem !important;
   white-space: pre-wrap !important;
 }
+
+.list-desc {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
