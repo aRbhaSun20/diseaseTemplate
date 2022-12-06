@@ -1,0 +1,294 @@
+{
+  "Introduction": {
+    "description 0": {
+      "text": "Abdominal pain can be felt anywhere between thorax ( chest ) and pelvis.  Pain could be mild, moderate or severe. It may be dull or acute.",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "description 0"
+    },
+    "description 1": {
+      "text": "Almost everyone has experienced abdominal pain, one time or other.  Most of the time, stomach pain is not serious, but severe abdominal pain is a cause of concern.  If pain starts suddenly and unexpectedly, it should be regarded as an emergency, and investigated accordingly.",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "description 1"
+    }
+  },
+  "Symptom Details": {
+    "description 0": {
+      "text": "Pain in abdomen can be of various intensities and nature. It can be:",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "description 0"
+    },
+    "list 1": {
+      "text": "Sharp, stabbing cramp like pain",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 1"
+    },
+    "list 2": {
+      "text": "Brief pain that may come or go",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 2"
+    },
+    "list 3": {
+      "text": "Pain associated with vomiting",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 3"
+    }
+  },
+  "Causes": {
+    "description 0": {
+      "text": "Various conditions are associated with abdominal pain . Causes of abdominal pain include:",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "description 0"
+    },
+    "list 1": {
+      "text": "ConstipationIrritable bowel syndrome",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 1"
+    },
+    "list 2": {
+      "text": "Food allergy",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 2"
+    },
+    "list 3": {
+      "text": "Food poisoning",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 3"
+    },
+    "list 4": {
+      "text": "Menstrual pain",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 4"
+    },
+    "description 5": {
+      "text": "Sudden, severe abdominal pain:",
+      "fontWeight": "bold",
+      "fontSize": 16,
+      "type": "description 5"
+    },
+    "list 6": {
+      "text": "Abdominal infection",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 6"
+    },
+    "description 7": {
+      "text": "Sudden, severe abdominal pain:",
+      "fontWeight": "bold",
+      "fontSize": 16,
+      "type": "description 7"
+    },
+    "list 8": {
+      "text": "Abdominal infection",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 8"
+    },
+    "list 9": {
+      "text": "Appendicitis",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 9"
+    },
+    "list 10": {
+      "text": "A perforated peptic ulcer",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 10"
+    },
+    "list 11": {
+      "text": "Gallstones",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 11"
+    },
+    "list 12": {
+      "text": "Kidney stones",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 12"
+    },
+    "list 13": {
+      "text": "Diverticulitis : Inflammation of small pouches that are part of the bowel",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 13"
+    },
+    "description 14": {
+      "text": "Other common causes in adults are:",
+      "fontWeight": "bold",
+      "fontSize": 16,
+      "type": "description 14"
+    },
+    "list 15": {
+      "text": "Irritable bowel syndrome",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 15"
+    },
+    "list 16": {
+      "text": "Crohn's disease",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 16"
+    },
+    "list 17": {
+      "text": "Urinary tract infection",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 17"
+    },
+    "list 18": {
+      "text": "Long term ",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 18"
+    },
+    "list 19": {
+      "text": "Peptic ulcer",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 19"
+    },
+    "list 20": {
+      "text": "Constipation",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 20"
+    },
+    "list 21": {
+      "text": "Heartburn and acid reflux",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 21"
+    },
+    "description 22": {
+      "text": "Common Causes in children",
+      "fontWeight": "bold",
+      "fontSize": 16,
+      "type": "description 22"
+    },
+    "list 23": {
+      "text": "Constipation",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 23"
+    },
+    "list 24": {
+      "text": "Urinary tract Infection",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 24"
+    },
+    "list 25": {
+      "text": "Anxiety",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 25"
+    },
+    "list 26": {
+      "text": "Heartburn and acid reflux",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 26"
+    }
+  },
+  "Diagnosis": {
+    "description 0": {
+      "text": "Generally abdominal pain goes with time, but if the pain does not subside, then one should seek medical help:",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "description 0"
+    },
+    "list 1": {
+      "text": "Abdominal discomfort that lasts 1 week or longer\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 1"
+    },
+    "list 2": {
+      "text": "Abdominal pain that does not improve in 24 - 48 hours, or becomes more severe and frequent and occurs with nausea and vomiting\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 2"
+    },
+    "list 3": {
+      "text": "Bloating that persists for more than 2 days\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 3"
+    },
+    "list 4": {
+      "text": "Burning sensation or increase in frequency on urination\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 4"
+    },
+    "list 5": {
+      "text": "Diarrhoea for more than 5 days\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 5"
+    },
+    "list 6": {
+      "text": "Fever (over 100°F for adults or 100.4°F for children) with pain\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 6"
+    },
+    "list 7": {
+      "text": "Prolonged poor appetite\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 7"
+    },
+    "list 8": {
+      "text": "Prolonged vaginal bleeding\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 8"
+    },
+    "list 9": {
+      "text": "Unexplained weight loss\t",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 9"
+    }
+  },
+  "References": {
+    "list 0": {
+      "text": "www.nhs.uk ",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 0"
+    },
+    "list 1": {
+      "text": "www.nlm.nih.gov ",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 1"
+    },
+    "list 2": {
+      "text": "www.nlm.nih.gov ",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 2"
+    },
+    "list 3": {
+      "text": "www.ncbi.nlm.nih.gov",
+      "fontWeight": "normal",
+      "fontSize": 16,
+      "type": "list 3"
+    }
+  }
+}
