@@ -20,3 +20,15 @@
 [debug] [2022-12-09T13:21:22.172Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/booming-bindery-356817:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
 [debug] [2022-12-09T13:21:22.548Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
 [debug] [2022-12-09T13:21:22.548Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-12-09T13:21:24.431Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/booming-bindery-356817:testIamPermissions 200
+[debug] [2022-12-09T13:21:24.432Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/booming-bindery-356817:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-09T13:21:24.434Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/booming-bindery-356817 [none]
+[debug] [2022-12-09T13:21:25.918Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/booming-bindery-356817 200
+[debug] [2022-12-09T13:21:25.918Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/booming-bindery-356817 {"projectId":"booming-bindery-356817","projectNumber":"396091249198","displayName":"My First Project","name":"projects/booming-bindery-356817","resources":{"hostingSite":"booming-bindery-356817"},"state":"ACTIVE","etag":"1_896fabc3-fc17-4230-b8ea-80ea47e680f5"}
+[info] 
+[info] === Deploying to 'booming-bindery-356817'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-12-09T13:21:25.924Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/booming-bindery-356817/versions [none]
+[debug] [2022-12-09T13:21:25.924Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/booming-bindery-356817/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-12-09T13:21:27.563Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/booming-bindery-356817/versions 200
