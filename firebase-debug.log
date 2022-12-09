@@ -1,0 +1,22 @@
+[debug] [2022-12-09T13:21:17.757Z] ----------------------------------------------------------------------
+[debug] [2022-12-09T13:21:17.761Z] Command:       /home/arb/.nvm/versions/node/v18.12.1/bin/node /home/arb/.nvm/versions/node/v18.12.1/bin/firebase deploy
+[debug] [2022-12-09T13:21:17.762Z] CLI Version:   11.16.0
+[debug] [2022-12-09T13:21:17.762Z] Platform:      linux
+[debug] [2022-12-09T13:21:17.762Z] Node Version:  v18.12.1
+[debug] [2022-12-09T13:21:17.763Z] Time:          Fri Dec 09 2022 18:51:17 GMT+0530 (India Standard Time)
+[debug] [2022-12-09T13:21:17.763Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-09T13:21:17.768Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-09T13:21:17.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-09T13:21:17.869Z] > authorizing via signed-in user (arbhasun1606@gmail.com)
+[debug] [2022-12-09T13:21:17.869Z] [iam] checking project booming-bindery-356817 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-12-09T13:21:17.870Z] > refreshing access token with scopes: []
+[debug] [2022-12-09T13:21:17.871Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-09T13:21:17.871Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-09T13:21:22.148Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-09T13:21:22.149Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-09T13:21:22.171Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/booming-bindery-356817:testIamPermissions [none]
+[debug] [2022-12-09T13:21:22.171Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/booming-bindery-356817:testIamPermissions x-goog-quota-user=projects/booming-bindery-356817
+[debug] [2022-12-09T13:21:22.172Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/booming-bindery-356817:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-12-09T13:21:22.548Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-12-09T13:21:22.548Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}

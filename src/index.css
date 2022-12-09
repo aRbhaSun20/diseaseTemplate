@@ -55,18 +55,20 @@ body {
 }
 
 .tabContainers {
-  position: relative;
-  width: 100%;
+  /* position: relative;
+  width: 100%; */
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.tabPanel {
+/* .tabPanel {
   position: absolute;
-}
+} */
 .show {
   max-width: 20rem;
   display: flex;
-  margin-left: auto;
+  /* margin-left: auto; */
   /* margin-right: 1rem; */
 }

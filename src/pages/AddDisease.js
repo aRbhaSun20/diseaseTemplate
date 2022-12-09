@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "react-json-pretty/themes/monikai.css";
 import JSONPretty from "react-json-pretty";
 import DataComponent from "./DataComponent";
+import SymptomDataComponent from "./SymptomDataComponent";
 
 function AddDisease() {
   const [show, setShow] = useState(null);
@@ -79,15 +80,16 @@ function AddDisease() {
           onChange={handleTabChange}
           aria-label="basic tabs example"
         >
-          <Tab value="Introduction" label="Introduction" {...a11yProps(0)} />
+          <Tab value="introduction" label="Introduction" {...a11yProps(0)} />
           <Tab
-            value="Symptom Details"
+            value="symptom_details"
             label="Symptom Details"
             {...a11yProps(1)}
           />
-          <Tab value="Causes" label="Causes" {...a11yProps(2)} />
-          <Tab value="Diagnosis" label="Diagnosis" {...a11yProps(3)} />
-          <Tab value="References" label="References" {...a11yProps(4)} />
+          <Tab value="causes" label="Causes" {...a11yProps(2)} />
+          <Tab value="diagnosis" label="Diagnosis" {...a11yProps(3)} />
+          <Tab value="references" label="References" {...a11yProps(4)} />
+          <Tab value="symptoms" label="Symptoms" {...a11yProps(5)} />
         </Tabs>
       </Box>
       <div className="tabContainers">
@@ -98,7 +100,7 @@ function AddDisease() {
             show={show}
             setShow={setShow}
             currentTab={handleToggle.currentTab}
-            title="Introduction"
+            title="introduction"
           />
         </TabPanel>
         <TabPanel value={handleToggle.currentTab} index={1}>
@@ -108,7 +110,7 @@ function AddDisease() {
             show={show}
             setShow={setShow}
             currentTab={handleToggle.currentTab}
-            title="Symptom Details"
+            title="symptom_details"
           />
         </TabPanel>
         <TabPanel value={handleToggle.currentTab} index={2}>
@@ -118,27 +120,37 @@ function AddDisease() {
             show={show}
             setShow={setShow}
             currentTab={handleToggle.currentTab}
-            title="Causes"
+            title="causes"
           />
         </TabPanel>
-        <TabPanel value={handleToggle.currentTab} index={1}>
+        <TabPanel value={handleToggle.currentTab} index={3}>
           <DataComponent
             handleToggle={handleToggle}
             setHandleToggle={setHandleToggle}
             show={show}
             setShow={setShow}
             currentTab={handleToggle.currentTab}
-            title="Diagnosis"
+            title="diagnosis"
           />
         </TabPanel>
-        <TabPanel value={handleToggle.currentTab} index={2}>
+        <TabPanel value={handleToggle.currentTab} index={4}>
           <DataComponent
             handleToggle={handleToggle}
             setHandleToggle={setHandleToggle}
             show={show}
             setShow={setShow}
             currentTab={handleToggle.currentTab}
-            title="References"
+            title="references"
+          />
+        </TabPanel>
+        <TabPanel value={handleToggle.currentTab} index={5}>
+          <SymptomDataComponent
+            handleToggle={handleToggle}
+            setHandleToggle={setHandleToggle}
+            show={show}
+            setShow={setShow}
+            currentTab={handleToggle.currentTab}
+            title="symptoms"
           />
         </TabPanel>
         <div className="show">
@@ -186,7 +198,6 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
       className="tabPanel"
-      sx={{ p: 3 }}
     >
       {children}
     </Box>
