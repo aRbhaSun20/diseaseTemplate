@@ -30,8 +30,14 @@ function GeneralInformation({
   }, [handleToggle.handleSubmit]);
 
   const handleReset = () => {
-    if (introductionList !== "") {
-      setListIntroduction("");
+    if (
+      introductionList.disease_name !== "" ||
+      introductionList.disease_severity !== ""
+    ) {
+      setListIntroduction({
+        disease_name: "",
+        disease_severity: "",
+      });
     }
     setHandleToggle((state) => ({ ...state, handleReset: false }));
   };
