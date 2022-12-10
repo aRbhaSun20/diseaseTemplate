@@ -4,6 +4,7 @@ import "react-json-pretty/themes/monikai.css";
 import JSONPretty from "react-json-pretty";
 import DataComponent from "./DataComponent";
 import SymptomDataComponent from "./SymptomDataComponent";
+import GeneralInformation from "./GeneralInformation";
 
 function AddDisease() {
   const [show, setShow] = useState(null);
@@ -11,7 +12,7 @@ function AddDisease() {
     handleAdd: false,
     handleReset: false,
     handleSubmit: false,
-    currentTab: "Introduction",
+    currentTab: "generalInformation",
   });
 
   const handleReset = () => {
@@ -80,6 +81,11 @@ function AddDisease() {
           onChange={handleTabChange}
           aria-label="basic tabs example"
         >
+          <Tab
+            value="generalInformation"
+            label="General Informations"
+            {...a11yProps(6)}
+          />
           <Tab value="introduction" label="Introduction" {...a11yProps(0)} />
           <Tab
             value="symptom_details"
@@ -151,6 +157,16 @@ function AddDisease() {
             setShow={setShow}
             currentTab={handleToggle.currentTab}
             title="symptoms"
+          />
+        </TabPanel>
+        <TabPanel value={handleToggle.currentTab} index={6}>
+          <GeneralInformation
+            handleToggle={handleToggle}
+            setHandleToggle={setHandleToggle}
+            show={show}
+            setShow={setShow}
+            currentTab={handleToggle.currentTab}
+            title="generalInformation"
           />
         </TabPanel>
         <div className="show">
