@@ -147,9 +147,7 @@ function GeneralInformation({
           style={{ width: "40rem" }}
           onChange={(e) => {
             const { value } = e.target;
-            if (value) {
-              setResultData((state) => ({ ...state, data: value }));
-            }
+            setResultData((state) => ({ ...state, data: value }));
           }}
         />
         <IconButton
