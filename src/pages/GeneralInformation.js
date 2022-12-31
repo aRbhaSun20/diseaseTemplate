@@ -1,5 +1,11 @@
-import { Clear } from "@mui/icons-material";
-import { IconButton, TextField } from "@mui/material";
+import { Clear, Done } from "@mui/icons-material";
+import {
+  CircularProgress,
+  IconButton,
+  Input,
+  TextField,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 
 function GeneralInformation({
@@ -9,11 +15,15 @@ function GeneralInformation({
   show,
   setShow,
   title,
+  resultData,
+  setResultData,
 }) {
   const [introductionList, setListIntroduction] = useState({
     disease_name: "",
     disease_severity: "",
+    image_url: "",
   });
+  const [done, setDone] = useState(false);
 
   useEffect(() => {
     if (handleToggle.currentTab === title && handleToggle.handleReset) {
@@ -60,6 +70,9 @@ function GeneralInformation({
     setListIntroduction((state) => ({ ...state, [type]: "" }));
   };
 
+  const uploadFile = (e) => {
+    console.log(e.target.files);
+  };
   if (title !== handleToggle.currentTab) return;
   return (
     <div className="syms-container" style={{ flexDirection: "column" }}>
@@ -97,6 +110,61 @@ function GeneralInformation({
           }}
         >
           <Clear style={{ color: "red" }} />
+        </IconButton>
+      </div>
+      <div className="list-desc">
+        <div
+          className="list-desc vertical"
+          style={{ alignItems: "flex-start" }}
+        >
+          <Typography>Choose disease image</Typography>
+          <Input
+            type="file"
+            name="disease image"
+            // value={introductionList.disease_severity}
+            label="Disease file"
+            // style={{ width: "40rem" }}
+            onChange={uploadFile}
+          />
+        </div>
+        <IconButton
+          onClick={() => {
+            setDone((state) => !state);
+          }}
+        >
+          {done ? <CircularProgress /> : <Done style={{ color: "green" }} />}
+        </IconButton>
+      </div>
+
+      <div className="list-desc">
+        <TextField
+          name="data"
+          value={resultData.data}
+          label="Resulting JSON data"
+          // helperText="Please add symptom Ids comma separated"
+          maxRows={8}
+          multiline
+          style={{ width: "40rem" }}
+          onChange={(e) => {
+            const { value } = e.target;
+            if (value) {
+              setResultData((state) => ({ ...state, data: value }));
+            }
+          }}
+        />
+        <IconButton
+          onClick={() => {
+            if (resultData.submitData && resultData.data) {
+              const formatData = JSON.parse(resultData.data);
+              setListIntroduction({
+                disease_name: formatData.disease_name,
+                disease_severity: formatData.disease_severity,
+              });
+            }
+            setResultData((state) => ({ ...state, submitData: true }));
+          }}
+        >
+          <Done style={{ color: "green" }} />
         </IconButton>
       </div>
     </div>

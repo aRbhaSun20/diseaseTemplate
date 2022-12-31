@@ -7,7 +7,7 @@ const BOLD_OPTIONS = ["normal", "bold", "bolder"];
 function DataComponent({
   handleToggle,
   setHandleToggle,
-
+  resultData,
   show,
   setShow,
   title,
@@ -63,6 +63,20 @@ function DataComponent({
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [handleToggle.handleSubmit]);
+
+  useEffect(() => {
+    if (resultData.submitData && resultData.data) {
+      const formatData = JSON.parse(resultData.data);
+      const requiredData = formatData[title];
+      if (requiredData && typeof requiredData === "object") {
+        const resultingData = Object.entries(requiredData).map(
+          ([_, value]) => value
+        );
+        setIntroductionDesc(resultingData);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [resultData]);
 
   const handleReset = () => {
     if (introductionDesc.length !== 0) {

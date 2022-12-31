@@ -1,12 +1,16 @@
 import { Box, Button, Tab, Tabs } from "@mui/material";
 import React, { useState } from "react";
 import "react-json-pretty/themes/monikai.css";
-import JSONPretty from "react-json-pretty";
+// import JSONPretty from "react-json-pretty";
 import DataComponent from "./DataComponent";
 import SymptomDataComponent from "./SymptomDataComponent";
 import GeneralInformation from "./GeneralInformation";
 
 function AddDisease() {
+  const [resultData, setResultData] = useState({
+    submitData: false,
+    data: null,
+  });
   const [show, setShow] = useState(null);
   const [handleToggle, setHandleToggle] = useState({
     handleAdd: false,
@@ -99,56 +103,26 @@ function AddDisease() {
         </Tabs>
       </Box>
       <div className="tabContainers">
-        <TabPanel value={handleToggle.currentTab} index={0}>
-          <DataComponent
-            handleToggle={handleToggle}
-            setHandleToggle={setHandleToggle}
-            show={show}
-            setShow={setShow}
-            currentTab={handleToggle.currentTab}
-            title="introduction"
-          />
-        </TabPanel>
-        <TabPanel value={handleToggle.currentTab} index={1}>
-          <DataComponent
-            handleToggle={handleToggle}
-            setHandleToggle={setHandleToggle}
-            show={show}
-            setShow={setShow}
-            currentTab={handleToggle.currentTab}
-            title="symptom_details"
-          />
-        </TabPanel>
-        <TabPanel value={handleToggle.currentTab} index={2}>
-          <DataComponent
-            handleToggle={handleToggle}
-            setHandleToggle={setHandleToggle}
-            show={show}
-            setShow={setShow}
-            currentTab={handleToggle.currentTab}
-            title="causes"
-          />
-        </TabPanel>
-        <TabPanel value={handleToggle.currentTab} index={3}>
-          <DataComponent
-            handleToggle={handleToggle}
-            setHandleToggle={setHandleToggle}
-            show={show}
-            setShow={setShow}
-            currentTab={handleToggle.currentTab}
-            title="diagnosis"
-          />
-        </TabPanel>
-        <TabPanel value={handleToggle.currentTab} index={4}>
-          <DataComponent
-            handleToggle={handleToggle}
-            setHandleToggle={setHandleToggle}
-            show={show}
-            setShow={setShow}
-            currentTab={handleToggle.currentTab}
-            title="references"
-          />
-        </TabPanel>
+        {[
+          "introduction",
+          "symptom_details",
+          "causes",
+          "diagnosis",
+          "references",
+        ].map((ele, i) => (
+          <TabPanel value={handleToggle.currentTab} index={i}>
+            <DataComponent
+              handleToggle={handleToggle}
+              setHandleToggle={setHandleToggle}
+              show={show}
+              setShow={setShow}
+              currentTab={handleToggle.currentTab}
+              title={ele}
+              resultData={resultData}
+            />
+          </TabPanel>
+        ))}
+
         <TabPanel value={handleToggle.currentTab} index={5}>
           <SymptomDataComponent
             handleToggle={handleToggle}
@@ -157,6 +131,7 @@ function AddDisease() {
             setShow={setShow}
             currentTab={handleToggle.currentTab}
             title="symptoms"
+            resultData={resultData}
           />
         </TabPanel>
         <TabPanel value={handleToggle.currentTab} index={6}>
@@ -167,10 +142,13 @@ function AddDisease() {
             setShow={setShow}
             currentTab={handleToggle.currentTab}
             title="generalInformation"
+            resultData={resultData}
+            setResultData={setResultData}
           />
         </TabPanel>
         <div className="show">
-          {show && <JSONPretty id="json-pretty" data={show} />}
+          {show && <div style={{ margin: 20 }}>{JSON.stringify(show)}</div>}
+          {/* {show && <JSONPretty id="json-pretty" data={show} />} */}
         </div>
       </div>
     </div>

@@ -37,7 +37,7 @@ body {
 }
 .syms-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-flow: row wrap;
   justify-content: space-around;
   gap: 1rem;
@@ -52,6 +52,7 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
+  width: fit-content;
 }
 
 .tabContainers {
@@ -71,4 +72,8 @@ body {
   display: flex;
   /* margin-left: auto; */
   /* margin-right: 1rem; */
+}
+
+.vertical {
+  flex-direction: column;
 }
