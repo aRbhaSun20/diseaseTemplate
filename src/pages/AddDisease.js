@@ -5,6 +5,7 @@ import "react-json-pretty/themes/monikai.css";
 import DataComponent from "./DataComponent";
 import SymptomDataComponent from "./SymptomDataComponent";
 import GeneralInformation from "./GeneralInformation";
+import UploadDetails from "./UploadDetails";
 
 function AddDisease() {
   const [resultData, setResultData] = useState({
@@ -100,6 +101,11 @@ function AddDisease() {
           <Tab value="diagnosis" label="Diagnosis" {...a11yProps(3)} />
           <Tab value="references" label="References" {...a11yProps(4)} />
           <Tab value="symptoms" label="Symptoms" {...a11yProps(5)} />
+          <Tab
+            value="uploadDisease"
+            label="Upload Diseases"
+            {...a11yProps(7)}
+          />
         </Tabs>
       </Box>
       <div className="tabContainers">
@@ -110,7 +116,7 @@ function AddDisease() {
           "diagnosis",
           "references",
         ].map((ele, i) => (
-          <TabPanel value={handleToggle.currentTab} index={i}>
+          <TabPanel value={handleToggle.currentTab} index={i} key={i}>
             <DataComponent
               handleToggle={handleToggle}
               setHandleToggle={setHandleToggle}
@@ -122,16 +128,13 @@ function AddDisease() {
             />
           </TabPanel>
         ))}
-
         <TabPanel value={handleToggle.currentTab} index={5}>
           <SymptomDataComponent
             handleToggle={handleToggle}
             setHandleToggle={setHandleToggle}
             show={show}
             setShow={setShow}
-            currentTab={handleToggle.currentTab}
             title="symptoms"
-            resultData={resultData}
           />
         </TabPanel>
         <TabPanel value={handleToggle.currentTab} index={6}>
@@ -144,6 +147,15 @@ function AddDisease() {
             title="generalInformation"
             resultData={resultData}
             setResultData={setResultData}
+          />
+        </TabPanel>
+        <TabPanel value={handleToggle.currentTab} index={7}>
+          <UploadDetails
+            handleToggle={handleToggle}
+            setHandleToggle={setHandleToggle}
+            show={show}
+            setShow={setShow}
+            title="uploadDisease"
           />
         </TabPanel>
         <div className="show">

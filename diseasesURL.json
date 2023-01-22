@@ -1,0 +1,257 @@
+{
+  "Abdominal Pain": {
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Appendicitis",
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Appendicitis.png"
+  },
+  "Alzheimers Disease": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Alzheimers-Disease.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Alzheimers-Disease"
+  },
+  "Anaemia": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Anaemia.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Anaemia"
+  },
+  "Anxiety": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Anxiety.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Anxiety"
+  },
+  "Appendicitis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Appendicitis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Appendicitis"
+  },
+  "Arthritis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Arthritis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Arthritis"
+  },
+  "Asthma": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Asthma.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Asthma"
+  },
+  "Autism": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Autism.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Autism"
+  },
+  "Dengue Fever": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Dengue-Fever.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Dengue-Fever"
+  },
+  "Diabetes": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Diabetes-Mellitus.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Diabetes-Mellitus"
+  },
+  "Digit-Sucking or Thumb or Finger Sucking": { "nhp": "", "upload": "" },
+  "Diphtheria": { "nhp": "", "upload": "" },
+  "Dyslexia": { "nhp": "", "upload": "" },
+  "Eclampsia": { "nhp": "", "upload": "" },
+  "Eczema": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Eczema.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Eczema"
+  },
+  "Endometriosis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Endometriosis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Endometriosis"
+  },
+  "Epidemic dropsy": { "nhp": "", "upload": "" },
+  "Epilepsy Generalized seizures": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Epilepsy.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Epilepsy"
+  },
+  "Epilepsy Partial seizures": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Epilepsy.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Epilepsy"
+  },
+  "Food Poisoning": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Food-poisoning.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Food-poisoning"
+  },
+  "Gaming disorder": { "nhp": "", "upload": "" },
+  "Gangrene": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Gangrene.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Gangrene"
+  },
+  "Gastro Esophageal Reflux Disease or GERD": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Gastro-Esophageal-Reflux-Disease-(GERD).png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Gastro Esophageal Reflux Disease or GERD"
+  },
+  "Goitre": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Goitre.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Goitre"
+  },
+  "Gum disease": { "nhp": "", "upload": "" },
+  "Haemophilia": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Haemophilia.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Haemophilia"
+  },
+  "Hand Foot and Mouth Disease": { "nhp": "", "upload": "" },
+  "Helminthiasis": { "nhp": "", "upload": "" },
+  "Hemangioma": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Hemangioma.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Hemangioma"
+  },
+  "Hepatitis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Hepatitis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Hepatitis"
+  },
+  "Hypertension or High Blood pressure": { "nhp": "", "upload": "" },
+  "Hypervitaminosis A": { "nhp": "", "upload": "" },
+  "Inflammatory Bowel Disease": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Inflammatory-bowel-disease-(IBD).png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Inflammatory-bowel-disease"
+  },
+  "Insomnia": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Insomnia.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Insomnia"
+  },
+  "Iron Deficiency Anemia": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Iron-Deficiency-Anemia.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Iron-Deficiency-Anemia"
+  },
+  "Japanese Encephalitis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Japanese-Encephalitis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Japanese-Encephalitis"
+  },
+  "Lymphoedema": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Lymphoedema.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Lymphoedema"
+  },
+  "Leukemia": {
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Leukemia",
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Leukemia.png"
+  },
+  "Leptospirosis": {
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Leptospirosis",
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Leptospirosis.png"
+  },
+  "Leprosy": {
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/leprosy-bacteria",
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/leprosy-bacteria.png"
+  },
+  "Keratosis Pilaris": {
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Keratosis-Pilaris",
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Keratosis-Pilaris.png"
+  },
+  "Jaundice": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Jaundice.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Jaundice"
+  },
+  "Kala azar Leishmaniasis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Kala-Azar.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Kala-Azar"
+  },
+  "Kala-azar Leishmaniasis": {
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Kala-Azar",
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Kala-Azar.png"
+  },
+  "Lead poisoning": { "nhp": "", "upload": "" },
+  "Lichen Planus": { "nhp": "", "upload": "" },
+  "Malaria": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/malaria.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/malaria"
+  },
+  "Mastitis": { "nhp": "", "upload": "" },
+  "Measles or Khasra": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Measles(Khasra).png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Measles(Khasra)"
+  },
+  "Meningitis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Meningitis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Meningitis"
+  },
+  "Migraine": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Migraine.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Migraine"
+  },
+  "Mouth Breathing": { "nhp": "", "upload": "" },
+  "Mumps": { "nhp": "", "upload": "" },
+  "Myocardial Infarction Heart Attack": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Myocardial-Infarction(Heart-Attack).png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Myocardial-Infarction or Heart-Attack"
+  },
+  "Narcolepsy": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Narcolepsy.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Narcolepsy"
+  },
+  "Nasal Polyps": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Nasal-Polyps.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Nasal-Polyps"
+  },
+  "Neuralgia": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Neuralgia.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Neuralgia"
+  },
+  "Obesity": { "nhp": "", "upload": "" },
+  "Obsessive Compulsive Disorder": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Obsessive-Compulsive-Disorder.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Obsessive-Compulsive-Disorder"
+  },
+  "Osteoarthritis": { "nhp": "", "upload": "" },
+  "Osteomyelitis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Osteomyelitis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Osteomyelitis"
+  },
+  "Osteoporosis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Osteoporosis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Osteoporosis"
+  },
+  "Parkinsons Disease": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Parkinsons-Disease.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Parkinsons-Disease"
+  },
+  "Pneumonia": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Pneumonia.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Pneumonia"
+  },
+  "Premenstrual syndrome": { "nhp": "", "upload": "" },
+  "Pseudostrabismus": { "nhp": "", "upload": "" },
+  "Psoriasis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Psoriasis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Psoriasis"
+  },
+  "Quinsy": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Quinsy.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Quinsy"
+  },
+  "Rabies": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Rabies.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Rabies"
+  },
+  "Ramsay Hunt Syndrome": { "nhp": "", "upload": "" },
+  "Rubella": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Rubella.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Rubella"
+  },
+  "Scabies": { "nhp": "", "upload": "" },
+  "Schizophrenia": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Schizophrenia.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Schizophrenia"
+  },
+  "Silicosis": { "nhp": "", "upload": "" },
+  "Spinal cord Injury": { "nhp": "", "upload": "" },
+  "Stroke": { "nhp": "", "upload": "" },
+  "Tetanus": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Tetanus.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Tetanus"
+  },
+  "Tooth Sensitivity": { "nhp": "", "upload": "" },
+  "Tuberculosis": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Tuberculosis.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Tuberculosis"
+  },
+  "Typhoid": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/36725695_diseaseaz.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Typhoid"
+  },
+  "Urticaria": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Urticaria.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Urticaria"
+  },
+  "Varicose Veins": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Varicose-veins.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Varicose-veins"
+  },
+  "Vitamin B12 Deficiency": {
+    "nhp": "https://nhp.gov.in/UploadFiles/diseaseaz/Vitamin-B12-Deficiency.png",
+    "upload": "https://storage.googleapis.com/cb-health-disease-images/Vitamin-B12-Deficiency"
+  },
+  "lactose intolerance": { "nhp": "", "upload": "" }
+}

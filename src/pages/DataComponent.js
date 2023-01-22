@@ -88,7 +88,7 @@ function DataComponent({
     setHandleToggle((state) => ({ ...state, handleReset: false }));
   };
 
-  const handleAddSymptom = (type = "desciption") => {
+  const handleAddSymptom = (type = "description") => {
     setIntroductionDesc((state) =>
       state.concat({
         text: "",

@@ -6,6 +6,8 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import axios from "axios";
+// import FormData from "form-data";
 import React, { useEffect, useState } from "react";
 
 function GeneralInformation({
@@ -23,6 +25,9 @@ function GeneralInformation({
     disease_severity: "",
     image_url: "",
   });
+  // eslint-disable-next-line no-unused-vars
+  const [uploadFiles, setUploadFiles] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [done, setDone] = useState(false);
 
   useEffect(() => {
@@ -70,8 +75,49 @@ function GeneralInformation({
     setListIntroduction((state) => ({ ...state, [type]: "" }));
   };
 
+  const handleSubmitImages = () => {
+    const config = {
+      method: "get",
+      url: "https://nhp.gov.in/UploadFiles/diseaseaz/Appendicitis.png",
+      // headers: { }
+    };
+
+    axios(config)
+      .then(function (response) {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+    // var data = new FormData();
+    // data.append("user_id", "Arbhasun");
+    // data.append("token", "arb123");
+    // data.append("content_type", "image/png");
+    // data.append("document_name", introductionList.disease_name);
+    // data.append("file", uploadFiles[0]);
+
+    // // console.log(uploadFile)
+
+    // var config = {
+    //   method: "post",
+    //   url: "https://cb-health-f5cl2wkbpq-wl.a.run.app/ccannotations/fileupload/",
+    //   // headers: {
+    //   //   ...data.getHeaders(),
+    //   // },
+    //   data: data,
+    // };
+    // axios(config)
+    //   .then((response) => {
+    //     console.log(response.data);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+  };
+
   const uploadFile = (e) => {
-    console.log(e.target.files);
+    setUploadFiles(e.target.files);
   };
   if (title !== handleToggle.currentTab) return;
   return (
@@ -86,6 +132,7 @@ function GeneralInformation({
           style={{ width: "40rem" }}
           onChange={handleChange}
         />
+        {/* <img src="https://nhp.gov.in/UploadFiles/diseaseaz/Appendicitis.png" alt="text"/> */}
         <IconButton
           onClick={() => {
             handleChangeReset("disease_name");
@@ -127,11 +174,7 @@ function GeneralInformation({
             onChange={uploadFile}
           />
         </div>
-        <IconButton
-          onClick={() => {
-            setDone((state) => !state);
-          }}
-        >
+        <IconButton onClick={handleSubmitImages}>
           {done ? <CircularProgress /> : <Done style={{ color: "green" }} />}
         </IconButton>
       </div>
