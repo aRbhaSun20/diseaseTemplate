@@ -84,3 +84,11 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
+.chatGPT {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
