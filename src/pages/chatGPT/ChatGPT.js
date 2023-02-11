@@ -1,6 +1,6 @@
 import { Check } from "@mui/icons-material";
 import { TextField, Button, IconButton } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 // import JSONPretty from "react-json-pretty";
 // import { useChatGPT } from "../../context/useChatGPT";
 // import { ChatGPTAPI, getOpenAIAuth } from "chatgpt";
